@@ -53,9 +53,11 @@
 
     <div class="grid grid-cols-2 mx-auto w-fit gap-8 mt-20">
       <div
+        id="scan_button"
         class="rounded-xl text-black text-center py-20 border-2 transition ease-in-out hover:-translate-y-1 hover:scale-105 hover:bg-sky-100 hover:border-sky-300 duration-300 bg-sky-50 border-sky-200"
       >
         <p
+          id="scan_text"
           style="font-family: DM Sans"
           class="font-bold text-2xl opacity-100 uppercase tracking-wide"
         >
@@ -70,8 +72,9 @@
       </div>
 
       <div
-        class="row-span-2 w-96 p-5 rounded-3xl text-black border-2 transition ease-in-out hover:-translate-y-1 hover:scale-105 duration-300 bg-lime-50 border-lime-200 hover:bg-lime-100 hover:border-lime-300"
+        class=" row-span-2 w-96 p-5 rounded-3xl text-black border-2 transition ease-in-out hover:-translate-y-1 hover:scale-105 duration-300 bg-lime-50 border-lime-200 hover:bg-lime-100 hover:border-lime-300"
       >
+      <div id="no_rfid" class="">
         <p class="text-center font-semibold">
           RFID-based Library Management System
         </p>
@@ -164,7 +167,11 @@
           </p>
           <p class="text-center font-bold text-lime-800 text-sm">RETURN</p>
         </div>
-        <!-- <div class="flex">
+      </div>
+
+      <div id="with_rfid" class="hidden ">
+
+        <div class="flex">
           <img
             src="./imgs/pfp1.jpg"
             class="rounded-full w-24 border-2 border-yellow-300"
@@ -195,8 +202,9 @@
             <p class="text-xs text-neutral-500">Total Borrowed Books</p>
           </div>
         </div>
+        <p class=" mt-5 mb-2 text-xs text-center font-semibold">Books On Hand</p>
         <div
-          class="rounded-md border-2 border-indigo-200 mt-5 hover:border-indigo-300 transition-all"
+          class="rounded-sm border-2 border-indigo-200 hover:border-indigo-300 transition-all"
         >
           <table
             class="group table-auto text-xs bg-indigo-50 w-full hover:bg-indigo-100"
@@ -217,21 +225,23 @@
               <tr>
                 <td class="pl-2">Frankenstein</td>
                 <td>Mary Shelley</td>
-                <td>Dec 7</td>
+                <td>Dec 1</td>
               </tr>
               <tr>
-                <td class="pl-2">Frankenstein</td>
-                <td>Mary Shelley</td>
-                <td>Dec 7</td>
+                <td class="pl-2">The Great Gatsby</td>
+                <td>F. Scott Fitzgerald</td>
+                <td>Dec 2</td>
               </tr>
               <tr>
-                <td class="pl-2 pb-1">Frankenstein</td>
-                <td>Mary Shelley</td>
-                <td>Dec 7</td>
+                <td class="pl-2 pb-1">The Hunger Games</td>
+                <td>Suzanne Collins</td>
+                <td>Dec 4</td>
               </tr>
             </tbody>
           </table>
-        </div> -->
+        </div>
+      </div>
+
       </div>
 
       <div
@@ -257,5 +267,13 @@
         </div>
       </div>
     </div>
+    <input
+      autocomplete="off"
+      type="number"
+      name="rfid"
+      id="rfid_input"
+      class="text-white focus:outline-none cursor-default [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
+    />
+    <script type="text/javascript" src="../js/index.js"></script>
   </body>
 </html>
