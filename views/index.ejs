@@ -37,21 +37,21 @@
           class="h-8 bg-orange-100 border-2 border-orange-200 w-2 rounded-sm ml-1 -rotate-6 group-hover:rotate-0 transition-all"
         ></div>
         <h1 class="text-black text-4xl ml-3 -mt-1">
-          <span class="font-semibold tracking-wide">Check</span
-          ><span class="ml-1">It</span><span class="ml-1">Out</span>
+          <span class="font-semibold tracking-wide text-red-300">Check</span
+          ><span class="ml-1 text-blue-300">It</span><span class="text-orange-300 ml-1">Out</span>
         </h1>
       </div>
       <div
         class="w-12 h-2 rounded-sm bg-green-100 green-2 border-2 border-green-200 group-hover:bg-green--100 group-hover:w-72 group-hover:transition-all group-hover:ease-in-out group-hover:duration-500"
       ></div>
       <p
-        class="opacity-0 group-hover:ml-24 group-hover:opacity-100 group-hover:transition-all group-hover:delay-150 group-hover:duration-700 text-center text-sm mt-1 ml-14"
+        class="font-medium text-neutral-400 opacity-0 group-hover:ml-24 group-hover:opacity-100 group-hover:transition-all group-hover:delay-150 group-hover:duration-700 text-center text-sm mt-1 ml-14"
       >
         Library Management System
       </p>
     </div>
 
-    <div class="grid grid-cols-2 mx-auto w-fit gap-8 mt-20">
+    <div class="grid grid-cols-1  md:grid-cols-2 mx-auto w-fit gap-8 mt-20">
       <div
         id="scan_button"
         class="rounded-xl text-black text-center py-20 border-2 transition ease-in-out hover:-translate-y-1 hover:scale-105 hover:bg-sky-100 hover:border-sky-300 duration-300 bg-sky-50 border-sky-200"
@@ -59,13 +59,13 @@
         <p
           id="scan_text"
           style="font-family: DM Sans"
-          class="font-bold text-2xl opacity-100 uppercase tracking-wide"
+          class="font-bold text-2xl opacity-100 uppercase tracking-wide text-sky-400"
         >
           Scan Library Card
         </p>
         <p
           style="font-family: DM Sans"
-          class="text-neutral-400 font-medium text-sm"
+          class="text-sky-300 font-medium text-sm"
         >
           Tap your library card on the scanner
         </p>
@@ -75,7 +75,7 @@
         class=" row-span-2 w-96 p-5 rounded-3xl text-black border-2 transition ease-in-out hover:-translate-y-1 hover:scale-105 duration-300 bg-lime-50 border-lime-200 hover:bg-lime-100 hover:border-lime-300"
       >
       <div id="no_rfid" class="">
-        <p class="text-center font-semibold">
+        <p class="text-center font-semibold text-lime-600">
           RFID-based Library Management System
         </p>
         <div
@@ -105,7 +105,7 @@
             Start by tapping your library card to log in to the system and to be
             able to borrow books.
           </p>
-          <p class="text-center text-sm font-bold text-lime-800">TAP</p>
+          <p class="text-center text-sm font-bold text-lime-700">TAP</p>
         </div>
 
         <div
@@ -135,7 +135,7 @@
             Enter the unique borrowing code displayed on the book or provided by
             the system.
           </p>
-          <p class="text-center font-bold text-lime-800 text-sm">BORROW</p>
+          <p class="text-center font-bold text-lime-700 text-sm">BORROW</p>
         </div>
 
         <div
@@ -165,7 +165,7 @@
             When you're done, simply head to the return kiosk or desk. And
             return the borrowed book.
           </p>
-          <p class="text-center font-bold text-lime-800 text-sm">RETURN</p>
+          <p class="text-center font-bold text-lime-700 text-sm">RETURN</p>
         </div>
       </div>
 
@@ -192,17 +192,17 @@
           <div
             class="ease-in-out hover:-translate-y-0.5 hover:scale-105 rounded-md p-2 px-3 shadow-sm drop-shadow-sm border-2 border-orange-200 bg-orange-50 hover:border-orange-300 hover:bg-orange-100 transition-all"
           >
-            <p class="text-xl font-extrabold text-center">2</p>
-            <p class="text-xs text-neutral-500">Almost Due Books</p>
+            <p class="text-xl font-extrabold text-center text-orange-400">2</p>
+            <p class="text-xs font-medium text-orange-300">Almost Due Books</p>
           </div>
           <div
             class="ease-in-out hover:-translate-y-0.5 hover:scale-105 bg-amber-50 rounded-md p-2 px-3 shadow-sm drop-shadow-sm border-2 border-amber-200 hover:border-amber-300 hover:bg-amber-100 transition-all"
           >
-            <p class="text-xl font-extrabold text-center">36</p>
-            <p class="text-xs text-neutral-500">Total Borrowed Books</p>
+            <p class="text-xl font-extrabold text-center text-amber-400">36</p>
+            <p class="text-xs font-medium text-amber-300">Total Borrowed Books</p>
           </div>
         </div>
-        <p class=" mt-5 mb-2 text-xs text-center font-semibold">Books On Hand</p>
+        <p class=" mt-5 mb-2 text-sm text-center font-semibold text-lime-500">Books On Hand</p>
         <div
           class="rounded-sm border-2 border-indigo-200 hover:border-indigo-300 transition-all"
         >
@@ -210,13 +210,13 @@
             class="group table-auto text-xs bg-indigo-50 w-full hover:bg-indigo-100"
           >
             <thead class="group-hover:bg-indigo-200 bg-indigo-100">
-              <tr class="*:px-1 *:py-0.5">
+              <tr class="*:px-1 *:py-0.5 text-indigo-400">
                 <th class="w-3/6">Book</th>
                 <th class="w-2/6">Author</th>
                 <th class="w-1/6">Due</th>
               </tr>
             </thead>
-            <tbody>
+            <tbody class="font-medium text-neutral-600">
               <tr>
                 <td class="pl-2">To Kill a Mockingbird</td>
                 <td>Harper Lee</td>
@@ -247,15 +247,15 @@
       <div
         class="p-5 rounded-xl bg-rose-50 border-2 border-rose-200 transition ease-in-out hover:-translate-y-1 hover:scale-105 hover:bg-rose-100 hover:border-rose-300 duration-300"
       >
-        <p class="font-bold text-lg">Borrow A Book</p>
+        <p class="font-bold text-lg text-rose-400">Borrow A Book</p>
 
-        <label for="code" class="text-xs text-neutral-500 font-medium"
-          >Enter Book Code:</label
+        <label for="code" class="text-xs text-rose-300 font-medium"
+          >Enter Book ISBN Code:</label
         ><br />
         <div class="w-full">
           <input
             name="code"
-            placeholder="code"
+            placeholder="ISBN"
             type="text"
             class="w-72 placeholder-violet-300 px-2 py-1 text-xs bg-violet-50 border-violet-200 border-2 rounded-md text-violet-500 hover:bg-violet-100 transition-all hover:border-violet-300 focus:ring-2 focus:outline-none focus:ring-violet-400"
           />

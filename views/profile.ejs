@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="/css/styles.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      @font-face {
+        font-family: tekna;
+        src: url(../font/tekna.otf);
+      }
+      body {
+        font-family: "DM Sans";
+      }
+      .text-2xs {
+        font-size: 0.6rem; /* 12px */
+        line-height: 0.75rem; /* 16px */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="group block mx-auto w-fit cursor-default">
+      <div class="flex mt-10">
+        <div
+          class="h-8 bg-red-100 border-2 border-red-200 w-4 rounded-sm"
+        ></div>
+        <div
+          class="h-8 bg-blue-100 border-2 border-blue-200 w-3 rounded-sm ml-1"
+        ></div>
+        <div
+          class="h-8 bg-orange-100 border-2 border-orange-200 w-2 rounded-sm ml-1 -rotate-6 group-hover:rotate-0 transition-all"
+        ></div>
+        <h1 class="text-black text-4xl ml-3 -mt-1">
+          <span class="font-semibold tracking-wide text-red-300">Check</span
+          ><span class="ml-1 text-blue-300">It</span
+          ><span class="text-orange-300 ml-1">Out</span>
+        </h1>
+      </div>
+      <div
+        class="w-12 h-2 rounded-sm bg-green-100 green-2 border-2 border-green-200 group-hover:bg-green--100 group-hover:w-72 group-hover:transition-all group-hover:ease-in-out group-hover:duration-500"
+      ></div>
+      <p
+        class="font-medium text-neutral-400 opacity-0 group-hover:ml-24 group-hover:opacity-100 group-hover:transition-all group-hover:delay-150 group-hover:duration-700 text-center text-sm mt-1 ml-14"
+      >
+        Library Management System
+      </p>
+    </div>
+
+    <div class="w-fit mx-auto mt-5 flex md:flex-row flex-col">
+      <div class="mx-5">
+        <p class="text-3xl font-semibold text-violet-300">
+          Hello, <br />
+          <span class="text-violet-400 font-bold text-4xl">Hirono!</span>
+        </p>
+        <p class="text-sm font-medium text-neutral-400 mt-1">
+          You have borrowed<span class="text-emerald-300"> 10 books</span> in
+          total
+        </p>
+        <p class="text-sm font-medium text-neutral-400">
+          You have <span class="text-sky-300">3 borrowed books</span> and
+          <span class="text-red-300">1 overdue book</span>, please return it
+        </p>
+      </div>
+
+      <div
+        class="mx-auto group border-2 rounded-lg p-3 pb-5 pr-5 w-fit h-fit right-0 md:ml-14 md:mt-5 mt-10  hover:bg-lime-100 hover:border-lime-300 hover:scale-105 transition-all"
+      >
+        <div class="flex mt-1 ml-2">
+          <img
+            src="./imgs/pfp1.jpg"
+            class="rounded-full w-14 border-2 group-hover:border-lime-400"
+          />
+          <div>
+            <p class="ml-3 font-semibold">Hirono</p>
+            <p class="ml-3 -mt-1 font-medium text-neutral-400 text-xs">
+              ID: 0723899155
+            </p>
+            <div
+              class="ml-3 mt-1 border-2 border-purple-200 bg-purple-100 px-2 text-2xs rounded-full text-purple-400 w-fit cursor-default hover:border-purple-300 hover:bg-purple-200 transition-all"
+            >
+              Book Club Member
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 mx-auto w-full md:w-4/6 mb-20 mt-10">
+      <div>
+        <div class="w-5/6 xl:w-3/6 mt-10 mx-auto">
+          <div
+            class="bg-red-50 font-medium text-red-300 w-fit py-1 px-3 rounded-3xl mx-auto border-2 border-red-300 hover:text-red-400 hover:border-red-400 hover:bg-red-100 hover:scale-105 transition-all"
+          >
+            <p class="flex place-items-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-5 inline mr-2 stroke-2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 9v3.75m9-.75a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 3.75h.008v.008H12v-.008Z"
+                />
+              </svg>
+              Over Due Books
+            </p>
+          </div>
+        </div>
+
+        <div class="mx-0 md:mx-7">
+          <div
+            class="group bg-orange-50 mt-5 border-2 border-orange-200 rounded-xl p-5 hover:bg-orange-100 hover:border-orange-300 hover:scale-105 transition-all"
+          >
+            <div class="flex">
+              <img
+                src="https://covers.openlibrary.org/b/isbn/9780140328721-M.jpg"
+                alt=""
+                class="rounded-sm h-24"
+              />
+              <div class="w-full ml-3">
+                <div class="ml-3">
+                  <p
+                    class="font-bold text-orange-400 text-xl group-hover:text-orange-500"
+                  >
+                    Fantastic Mr. Fox
+                  </p>
+                  <p
+                    class="font-semibold -mt-1 text-orange-300 text-xs group-hover:text-orange-400"
+                  >
+                    Roald Dahl
+                  </p>
+                  <div
+                    class="bg-orange-100 rounded-full border-2 text-xs py-0 px-2 w-fit border-orange-300 text-orange-400 mt-3 group-hover:bg-orange-200 group-hover:border-orange-500 group-hover:text-orange-500 transition-all"
+                  >
+                    <p>ISBN 9780140328721</p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="bg-red-50 border-2 border-red-300 rounded-md h-fit py-1 px-2 text-center text-red-300 group-hover:bg-red-100 group-hover:border-red-400 group-hover:text-red-400 transition-all group-hover:scale-110 delay-100"
+              >
+                <p class="text-xs font-bold">DUE</p>
+                <p class="text-sm font-semibold">NOV.15</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="w-5/6 xl:w-3/6 mt-10 mx-auto ">
+          <div
+            class="bg-sky-50 font-medium text-sky-300 w-fit py-1 px-3 rounded-3xl mx-auto border-2 border-sky-300 hover:text-sky-400 hover:border-sky-400 hover:bg-sky-100 hover:scale-105 transition-all"
+          >
+            <p class="flex place-items-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-5 inline mr-2 stroke-2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25"
+                />
+              </svg>
+
+              Book Onhand
+            </p>
+          </div>
+        </div>
+        <div class="mx-0 md:mx-7">
+          <div
+            class="group bg-teal-50 mt-5 border-2 border-teal-200 rounded-xl p-5 hover:bg-teal-100 hover:border-teal-300 hover:scale-105 transition-all"
+          >
+            <div class="flex">
+              <img
+                src="https://covers.openlibrary.org/b/isbn/9780007455935-M.jpg"
+                alt=""
+                class="rounded-sm h-24"
+              />
+              <div class="w-full ml-3">
+                <div class="ml-3">
+                  <p
+                    class="font-bold text-teal-400 text-xl group-hover:text-teal-500"
+                  >
+                    The Lorax
+                  </p>
+                  <p
+                    class="font-semibold -mt-1 text-teal-300 text-xs group-hover:text-teal-400"
+                  >
+                    Dr. Seuss
+                  </p>
+                  <div
+                    class="bg-teal-100 rounded-full border-2 text-xs py-0 px-2 w-fit border-teal-300 text-teal-400 mt-3 group-hover:border-teal-500 group-hover:bg-teal-200 group-hover:text-teal-500 transition-all"
+                  >
+                    <p>ISBN 9780007455935</p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="bg-sky-50 border-2 border-sky-300 rounded-md h-fit py-1 px-2 text-center text-sky-300 group-hover:bg-sky-100 group-hover:border-sky-400 group-hover:text-sky-400 transition-all group-hover:scale-110 delay-100"
+              >
+                <p class="text-xs font-bold">DUE</p>
+                <p class="text-sm font-semibold">NOV.28</p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="group bg-pink-50 mt-5 border-2 border-pink-200 rounded-xl p-5 hover:bg-pink-100 hover:border-pink-300 hover:scale-105 transition-all"
+          >
+            <div class="flex">
+              <img
+                src="https://covers.openlibrary.org/b/isbn/0821739050-M.jpg"
+                alt=""
+                class="rounded-sm h-24"
+              />
+              <div class="w-full ml-3">
+                <div class="ml-3">
+                  <p
+                    class="font-bold text-pink-400 text-xl group-hover:text-pink-500"
+                  >
+                    The Medicine Trail
+                  </p>
+                  <p
+                    class="font-semibold -mt-1 text-pink-300 text-xs group-hover:text-pink-400"
+                  >
+                    Dreaming Wolf
+                  </p>
+                  <div
+                    class="bg-pink-100 rounded-full border-2 text-xs py-0 px-2 w-fit border-pink-300 text-pink-400 mt-3 group-hover:border-pink-500 group-hover:bg-pink-200 group-hover:text-pink-500 transition-all"
+                  >
+                    <p>ISBN 0821739050</p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="bg-sky-50 border-2 border-sky-300 rounded-md h-fit py-1 px-2 text-center text-sky-300 group-hover:bg-sky-100 group-hover:border-sky-400 group-hover:text-sky-400 transition-all group-hover:scale-110 delay-100"
+              >
+                <p class="text-xs font-bold">DUE</p>
+                <p class="text-sm font-semibold">NOV.30</p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="group bg-yellow-50 mt-5 border-2 border-yellow-200 rounded-xl p-5 hover:bg-yellow-100 hover:border-yellow-300 hover:scale-105 transition-all"
+          >
+            <div class="flex">
+              <img
+                src="https://covers.openlibrary.org/b/isbn/0875771521-M.jpg"
+                alt=""
+                class="rounded-sm h-24"
+              />
+              <div class="w-full ml-3">
+                <div class="ml-3">
+                  <p
+                    class="font-bold text-yellow-400 text-xl group-hover:text-yellow-500"
+                  >
+                    Directly from China
+                  </p>
+                  <p
+                    class="font-semibold -mt-1 text-yellow-300 text-xs group-hover:text-yellow-400"
+                  >
+                    Christina H. Nelson
+                  </p>
+                  <div
+                    class="bg-yellow-100 rounded-full border-2 text-xs py-0 px-2 w-fit border-yellow-300 text-yellow-400 mt-3 group-hover:border-yellow-500 group-hover:bg-yellow-200 group-hover:text-yellow-500 transition-all"
+                  >
+                    <p>ISBN 0875771521</p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="bg-sky-50 border-2 border-sky-300 rounded-md h-fit py-1 px-2 text-center text-sky-300 group-hover:bg-sky-100 group-hover:border-sky-400 group-hover:text-sky-400 transition-all group-hover:scale-110 delay-100"
+              >
+                <p class="text-xs font-bold">DUE</p>
+                <p class="text-sm font-semibold">NOV.30</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
