@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="/css/styles.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      @font-face {
+        font-family: tekna;
+        src: url(../font/tekna.otf);
+      }
+      body {
+        font-family: "DM Sans";
+      }
+      .text-2xs {
+        font-size: 0.6rem; /* 12px */
+        line-height: 0.75rem; /* 16px */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="group block mx-auto w-fit cursor-default">
+      <div class="flex mt-10">
+        <div
+          class="h-8 bg-red-100 border-2 border-red-200 w-4 rounded-sm"
+        ></div>
+        <div
+          class="h-8 bg-blue-100 border-2 border-blue-200 w-3 rounded-sm ml-1"
+        ></div>
+        <div
+          class="h-8 bg-orange-100 border-2 border-orange-200 w-2 rounded-sm ml-1 -rotate-6 group-hover:rotate-0 transition-all"
+        ></div>
+        <h1 class="text-black text-4xl ml-3 -mt-1">
+          <span class="font-semibold tracking-wide text-red-300">Check</span
+          ><span class="ml-1 text-blue-300">It</span
+          ><span class="text-orange-300 ml-1">Out</span>
+        </h1>
+      </div>
+      <div
+        class="w-12 h-2 rounded-sm bg-green-100 green-2 border-2 border-green-200 group-hover:bg-green--100 group-hover:w-72 group-hover:transition-all group-hover:ease-in-out group-hover:duration-500"
+      ></div>
+      <p
+        class="font-medium text-neutral-400 opacity-0 group-hover:ml-24 group-hover:opacity-100 group-hover:transition-all group-hover:delay-150 group-hover:duration-700 text-center text-sm mt-1 ml-14"
+      >
+        Library Management System
+      </p>
+    </div>
+
+    <div class="mx-auto w-2/6 mt-10 flex">
+      <img
+        src="https://covers.openlibrary.org/b/isbn/9780140328721-M.jpg"
+        alt=""
+        class="h-60 rounded-md"
+      />
+      <div class="mx-5">
+        <p
+          class="font-bold text-orange-400 text-2xl group-hover:text-orange-500"
+        >
+          Fantastic Mr. Fox
+        </p>
+        <p
+          class="font-semibold -mt-1 text-orange-300 text-sm group-hover:text-orange-400"
+        >
+          Roald Dahl
+        </p>
+        <div
+          class="bg-orange-100 rounded-full border-2 text-xs py-0 px-2 w-fit border-orange-300 text-orange-400 mt-3 hover:bg-orange-200 hover:border-orange-500 hover:text-orange-500 transition-all"
+        >
+          <p>ISBN 9780140328721</p>
+        </div>
+        <p class="text-xs mt-5 font-medium text-neutral-400">
+          The main character of Fantastic Mr. Fox is an extremely clever
+          anthropomorphized fox named Mr. Fox. He lives with his wife and four
+          little foxes. In order to feed his family, he steals food from the
+          cruel, brutish farmers named Boggis, Bunce, and Bean every night.
+        </p>
+      </div>
+    </div>
+
+    <div class="group mx-auto w-2/6 mt-10 bg-orange-50 border-2 border-orange-300 rounded-lg py-2 px-5 hover:bg-orange-100 hover:border-orange-400 transition-all *:transition-all hover:scale-105">
+      <p class="font-semibold text-sm text-orange-400 group-hover:text-orange-500">Open Library: <span class="text-orange-300 font-medium ml-3 group-hover:text-orange-400">OL29345231M</span></p>
+    </div>
+  </body>
+</html>

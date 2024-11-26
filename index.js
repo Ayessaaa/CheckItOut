@@ -18,6 +18,10 @@ app.get("/admin", siteController.admin);
 
 app.get("/profile", siteController.profile);
 
+app.get("/book", siteController.book);
+
+app.get("/users", siteController.users);
+
 // Start server
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {

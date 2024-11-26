@@ -12,8 +12,18 @@ const profile = (req, res) => {
   res.render('profile');
 };
 
+const book = (req, res) => {
+  res.render('book');
+};
+
+const users = (req, res) => {
+  res.render('users');
+};
+
 module.exports = {
   home,
   admin,
-  profile
+  profile,
+  book,
+  users
 };
