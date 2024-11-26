@@ -14,6 +14,8 @@ app.use(express.static(path.join(__dirname, "public")));
 // Define a basic route
 app.get("/", siteController.home);
 
+app.get("/admin", siteController.admin);
+
 // Start server
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {

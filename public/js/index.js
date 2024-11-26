@@ -16,9 +16,15 @@ window.onload = function () {
   document.addEventListener("keydown", function (event) {
     if (event.code == "Enter") {
       var rfidNumber = document.getElementById("rfid_input").value;
-      noRFID.classList.add("hidden");
+      console.log(rfidNumber)
+      if (rfidNumber === '0721324723'){
+        window.location.href = '/admin'
+      } else {
+        noRFID.classList.add("hidden");
       withRFID.classList.remove("hidden");
       document.getElementById("scan_text").innerHTML = "SCAN LIBRARY CARD";
+      }
+      
     }
   });
 };

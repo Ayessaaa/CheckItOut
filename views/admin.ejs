@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="/css/styles.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      @font-face {
+        font-family: tekna;
+        src: url(../font/tekna.otf);
+      }
+      body {
+        font-family: "DM Sans";
+      }
+      .text-2xs {
+        font-size: 0.60rem; /* 12px */
+        line-height: 0.75rem; /* 16px */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="group block mx-auto w-fit cursor-default">
+      <div class="flex mt-10">
+        <div
+          class="h-8 bg-red-100 border-2 border-red-200 w-4 rounded-sm"
+        ></div>
+        <div
+          class="h-8 bg-blue-100 border-2 border-blue-200 w-3 rounded-sm ml-1"
+        ></div>
+        <div
+          class="h-8 bg-orange-100 border-2 border-orange-200 w-2 rounded-sm ml-1 -rotate-6 group-hover:rotate-0 transition-all"
+        ></div>
+        <h1 class="text-black text-4xl ml-3 -mt-1">
+          <span class="font-semibold tracking-wide text-red-300">Check</span
+          ><span class="ml-1 text-blue-300">It</span><span class="text-orange-300 ml-1">Out</span>
+        </h1>
+      </div>
+      <div
+        class="w-12 h-2 rounded-sm bg-green-100 green-2 border-2 border-green-200 group-hover:bg-green--100 group-hover:w-72 group-hover:transition-all group-hover:ease-in-out group-hover:duration-500"
+      ></div>
+      <p
+        class="font-medium text-neutral-400 opacity-0 group-hover:ml-24 group-hover:opacity-100 group-hover:transition-all group-hover:delay-150 group-hover:duration-700 text-center text-sm mt-1 ml-14"
+      >
+        Library Management System
+      </p>
+    </div>
+
+    <div class="w-3/6 mx-auto mt-5">
+      <p class="text-3xl font-semibold text-violet-300">
+        Hello, <br> Librarian
+        <span class="text-violet-400 font-bold text-4xl ml-1">Kylie!</span>
+      </p>
+      <p class="text-sm font-medium text-neutral-400 mt-1">
+        You have <span class="text-red-300">5 overdue books</span> and
+        <span class="text-blue-300">27 borrowed books</span>
+      </p>
+    </div>
+
+    <div class="w-5/6 xl:w-3/6 mt-10 mx-auto">
+      <div class="bg-red-50 font-medium text-red-300 w-fit py-1 px-3 rounded-3xl mx-auto border-2 border-red-300 hover:text-red-400 hover:border-red-400 hover:bg-red-100 hover:scale-105 transition-all">
+        <p class="flex place-items-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-5 inline mr-3 stroke-2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M12 9v3.75m9-.75a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 3.75h.008v.008H12v-.008Z"
+            />
+          </svg>
+          Over Due Books
+        </p>
+      </div>
+
+      <% 
+      async function fetchBooks(isbn){
+          const reponse = await fetch("https://openlibrary.org/isbn/"+isbn+".json")
+          console.log(reponse)
+        }
+        // const book1 = fetchBooks("9780140328721")
+      %>
+        
+
+      <div class="group w-full mx-auto bg-orange-50 mt-5 border-2 border-orange-200 rounded-xl p-5 hover:bg-orange-100 hover:border-orange-300 hover:scale-105 transition-all">
+        <div class="flex">
+          <img src="https://covers.openlibrary.org/b/isbn/9780140328721-M.jpg" alt="" class="rounded-sm h-28">
+
+          <div class="grid grid-cols-1 w-full lg:grid-cols-2 ml-3">
+            <div class="ml-3">
+              <p class="font-bold text-orange-400 text-2xl">Fantastic Mr. Fox</p>
+              <p class="font-semibold -mt-1 text-orange-300 text-xs">Roald Dahl</p>
+              <div class="bg-orange-100 rounded-full border-2 text-xs py-0 px-2 w-fit border-orange-300 text-orange-400 mt-1">
+                <p>ISBN 9780140328721</p>
+              </div>
+            </div>
+
+            <div class=" border-2 bg-white lg:w-full rounded-md px-2 py-1 mt-5 lg:mt-0 ml-3 lg:ml-0 w-fit">
+              <p class="text-sm font-semibold text-neutral-400">Borrowed by:</p>
+              <div class="flex mt-2  ml-2">
+                <img src="./imgs/pfp1.jpg" class="rounded-full w-14 border-2"/>
+                <div>
+                  <p class="ml-3 font-semibold">Hirono</p>
+                  <p class="ml-3 -mt-1 font-medium text-neutral-400 text-xs">ID: 0723899155</p>
+                  <div
+                    class="ml-3 mt-1 border-2 border-purple-200  bg-purple-100 px-2 text-2xs rounded-full text-purple-400 w-fit cursor-default hover:border-purple-300 hover:bg-purple-200 transition-all"
+                  >
+                    Book Club Member
+                  </div>
+                </div>
+                <div class="bg-red-50 rounded-md border-2 mx-5 border-red-300 lg:mx-auto p-1 text-red-300 h-fit group-hover:bg-red-100 group-hover:border-red-400 group-hover:text-red-400 group-hover:scale-105 transition-all delay-150">
+                  <p class="text-xs font-bold text-center">DUE</p>
+                  <p class="text-center text-sm font-semibold">NOV 15</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="group w-full mx-auto bg-teal-50 mt-5 border-2 border-teal-200 rounded-xl p-5 hover:bg-teal-100 hover:border-teal-300 hover:scale-105 transition-all">
+        <div class="flex">
+          <img src="https://covers.openlibrary.org/b/isbn/9780007455935-M.jpg" alt="" class="rounded-sm h-28">
+
+          <div class="grid grid-cols-1 w-full lg:grid-cols-2 ml-3">
+            <div class="ml-3">
+              <p class="font-bold text-teal-400 text-2xl">The Lorax</p>
+              <p class="font-semibold -mt-1 text-teal-300 text-xs">Dr. Seuss</p>
+              <div class="bg-teal-100 rounded-full border-2 text-xs py-0 px-2 w-fit border-teal-300 text-teal-400 mt-1">
+                <p>ISBN 9780007455935</p>
+              </div>
+            </div>
+
+            <div class=" border-2 bg-white lg:w-full rounded-md px-2 py-1 mt-5 lg:mt-0 ml-3 lg:ml-0 w-fit">
+              <p class="text-sm font-semibold text-neutral-400">Borrowed by:</p>
+              <div class="flex mt-2  ml-2">
+                <img src="./imgs/pfp1.jpg" class="rounded-full w-14 border-2"/>
+                <div>
+                  <p class="ml-3 font-semibold">Hirono</p>
+                  <p class="ml-3 -mt-1 font-medium text-neutral-400 text-xs">ID: 0723899155</p>
+                  <div
+                    class="ml-3 mt-1 border-2 border-purple-200  bg-purple-100 px-2 text-2xs rounded-full text-purple-400 w-fit cursor-default hover:border-purple-300 hover:bg-purple-200 transition-all"
+                  >
+                    Book Club Member
+                  </div>
+                </div>
+                <div class="bg-red-50 rounded-md border-2 mx-5 border-red-300 lg:mx-auto p-1 text-red-300 h-fit group-hover:bg-red-100 group-hover:border-red-400 group-hover:text-red-400 group-hover:scale-105 transition-all delay-150">
+                  <p class="text-xs font-bold text-center">DUE</p>
+                  <p class="text-center text-sm font-semibold">NOV 22</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>
