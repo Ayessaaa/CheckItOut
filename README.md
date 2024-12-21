@@ -1,6 +1,8 @@
 ﻿# CheckItOut
 CheckItOut is an RFID-based Library Management System designed to make borrowing, returning, and tracking books easier. Each book has a unique code to enter in the system. The system also helps librarians keep track of books, find misplaced ones, and manage inventory more efficiently. CheckItOut saves time for both library staff and users while making the whole process smoother.
 
+This is not yet a finished project. This is project is focused on creating the front-end of the website and the back-end such as database doesn't work yet.
+
 ## Table of Contents
 1. [Built Using](#built-using)
 2. [Features](#features)
@@ -50,8 +52,10 @@ npm run watch-css
 ## Features
 ![423s](https://github.com/user-attachments/assets/45520ba5-a7a5-4224-bf48-25a7d143d61d)
 
-- **Scan Library ID** - this scans the library id of the user and returns its profile also the users books stats
-- **Borrow A Book** - inputs the unique code of the book and if the user enter, it will be added to the books borrowed by that user
+(Database and backend is not yet working)
+
+- **Scan Library ID** - this scans the library id of the user and returns its profile also the users books stats. 
+- **Borrow A Book** - inputs the unique code of the book and if the user enter, it will be added to the books borrowed by that user. (doesn't work yet)
 - **Profile** - this shows the users profile pic, name, id number, label, book stats, and book on hand table (also their information).
 
 ### Profile Page
